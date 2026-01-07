@@ -29,6 +29,7 @@ dayjs.extend(customParseFormat);
 
 import { AppProvider } from "./presentation/context/AppContext";
 import EventInformationPage from "./presentation/pages/EventInformationPage";
+import SamplingPage from "./presentation/pages/SamplingPage";
 
 const Layout = () => {
   return (
@@ -49,7 +50,7 @@ const router = createBrowserRouter(
       children: [
         {
           path: "",
-          element: <EventInformationPage />,
+          element: <SamplingPage />,
         },
       ],
     },
